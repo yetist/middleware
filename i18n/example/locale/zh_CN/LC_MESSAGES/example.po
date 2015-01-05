@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-05 17:39+0800\n"
+"POT-Creation-Date: 2015-01-06 00:03+0800\n"
 "PO-Revision-Date: 2015-01-05 17:59+0800\n"
 "Last-Translator: yetist <yetist@gmail.com>\n"
 "Language-Team: Chinese (simplified)\n"
@@ -17,6 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.go:15
+#: main.go:34 main.go:39
 msgid "Hello world!"
 msgstr "你好世界"
+
+#: templates/index.tmpl:1
+msgid "Homepage"
+msgstr "主页"
+
+#: templates/index.tmpl:4
+msgid "cat"
+msgstr "猫"
+
+#: templates/index.tmpl:3
+msgid "ok"
+msgstr "好"
