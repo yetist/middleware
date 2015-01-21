@@ -38,6 +38,7 @@ type Options struct {
 	Redirect bool
 	// Name that maps into template variable. Default is "i18n".
 	TmplName string
+	Inited   bool
 }
 
 func prepareOptions(options []Options) Options {
@@ -90,7 +91,9 @@ func initLocale(opt Options) {
 		gettext.BindTextdomain(opt.Domain, opt.Directory, opt.ZipData)
 		gettext.Textdomain(opt.Domain)
 	}
-	once.Do(onceBody)
+	if !opt.Inited {
+		once.Do(onceBody)
+	}
 }
 
 // I18n is a middleware provides localization layer for your application.
